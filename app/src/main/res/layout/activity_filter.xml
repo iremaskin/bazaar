@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FAFAFA"
+        app:titleTextColor="#222222"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/toolbar_dropshadow"
+        android:id="@+id/view" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/view">
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Mesafe"
+            android:textSize="20dp"/>
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seekBarDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDistance"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBarDistance"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/disRelative">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true">
+                <TextView
+                    android:id="@+id/txtDistanceShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="65dp"/>
+                <ImageView
+                    android:id="@+id/imageDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:src="@drawable/way"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Kategori seçiniz"
+            android:textSize="20dp"
+            android:layout_below="@id/disRelative"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCategory"
+            android:id="@+id/spinnerCategory"
+            android:layout_marginTop="20dp">
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Fiyat aralığı giriniz."
+            android:textSize="20dp"
+            android:layout_below="@id/spinnerCategory"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPrice"
+            android:id="@+id/spinnerPrice"
+            android:layout_marginTop="20dp">
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/editTextInformation"
+            android:layout_below="@id/spinnerPrice"
+            android:layout_marginTop="10dp"
+            android:hint="Açıklama giriniz"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_newRequest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Ee nerede?"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

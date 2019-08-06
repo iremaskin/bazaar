@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "773979403126",
+    "firebase_url": "https://bazaar-79bde.firebaseio.com",
+    "project_id": "bazaar-79bde",
+    "storage_bucket": "bazaar-79bde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773979403126:android:b335f11be69f1a9f",
+        "android_client_info": {
+          "package_name": "com.bazaar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773979403126-oek2mvrusm4vreebqs6b3ommvjl66dan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-D9EJUO_4aBQR4hmwOfvTbQ6hoVhR_QI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773979403126:android:c8ba15441039600f",
+        "android_client_info": {
+          "package_name": "com.bazaar.forshopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773979403126-oek2mvrusm4vreebqs6b3ommvjl66dan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-D9EJUO_4aBQR4hmwOfvTbQ6hoVhR_QI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
